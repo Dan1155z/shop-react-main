@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import '../index.css'
 
 export const ProductCard = ({ product }) => {
   return (
@@ -12,7 +13,7 @@ export const ProductCard = ({ product }) => {
       <p className='text-gray-700'>{product.price} ₽</p>
       <Link
         to={`/product/${product.id}`}
-        className='mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600'
+        className='button_card mt-4 inline-block bg-blue-500 px-4 py-2 rounded hover:bg-blue-600'
       >
         Подробнее
       </Link>
