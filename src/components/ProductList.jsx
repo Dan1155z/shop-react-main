@@ -1,12 +1,12 @@
 import { ProductCard } from "./ProductCard"
 
-export const ProductList =({ products}) => {
+export const ProductList =({ products, addToCart}) => {
     return (
     <div className="grid grid-cols-1 sm:grid-cols-3
     md:grind-cols-3 lg:grid-cols-4 gap-6">
     
         {products.map(product => (
-            <ProductCard key={product.id} product={product} />
+            <ProductCard key={product.id} product={product} addToCart={addToCart} />
            ))}
     </div>
     )
