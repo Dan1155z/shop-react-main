@@ -62,6 +62,45 @@ export const Home = ({ addToCart }) => {
             focus:ring-2 focus:ring-blue-400' />
           </div>
         </div>
+
+        <div className='flex space-x-2'>
+          <div className='w-1/2'>
+            <label htmlFor="minSpace" className='block text-gray-700 mb-1'>От</label>
+            <input type="number"
+              placeholder='0'
+              value={minPrice}
+              onChange={e => setMinPrice(e.target.value)}
+              id='minPrice'
+              className='w-full px-4 py-2 border rounded rounded focus:outline-none focus:ring-2 focus:ring-blue-400'
+            />
+          </div>
+          <div>
+            <label htmlFor="maxSpace" className='block text-gray-700 mb-1'>До</label>
+            <input type="number"
+              id='maxPrice'
+              placeholder='Макс'
+              value={maxPrice}
+              onChange={e => setMaxPrice(e.target.value)}
+              className='w-full px-4 py-2 border rounded rounded focus:outline-none focus:ring-2 focus:ring-blue-400'
+            />
+          </div>
+        </div>
+        <div>
+
+          <label className='block text-gray-700 mb-1' htmlFor="sort">Сортировка
+          </label>
+          <select
+            id="sort"
+            value={sortOption}
+            onChange={e => setSortOption(e.target.value)}
+            className='w-full px-4 py-2 border rounded rounded focus:outline-none focus:ring-2 focus:ring-blue-400'>
+            <option value="">Сортировать</option>
+            <option value="price-asc">Цена: По возрастанию</option>
+            <option value="price-desc">Цена: По убыванию</option>
+            <option value="name-asc"> Название: А(F)-Я(Z)</option>
+            <option value="name-desc">Название: Я(Z)-А(A)</option>
+          </select>
+        </div>
       </div>
       <ProductList products={filteredProducts} addToCart={addToCart} />
     </div>
