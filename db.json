@@ -1,3 +1,23 @@
 {
-    "orders":[]
+  "orders": [
+    {
+      "id": "dbc5",
+      "name": "KSRHOLI",
+      "email": "DA@MAIL.RU",
+      "adress": "GTESGDRR",
+      "PaymentMethod": "card",
+      "items": [
+        {
+          "id": 1,
+          "title": "krossovki",
+          "price": 12000,
+          "image": "/public/assets/6965148743.jpg",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+          "quantity": 5
+        }
+      ],
+      "total": 54000,
+      "data": "2025-10-10T13:34:37.729Z"
+    }
+  ]
 }

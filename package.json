@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "json-server --watch db.json --port 3001",
-    "dev": "concurrently \"npm run start:api\"\"vite",
+    "start:api": "json-server --watch db.json --port 3001",
+    "dev": "concurrently \"npm run start:api\" \"vite\"",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
